@@ -41,8 +41,8 @@ The first was aimed primarily at minimizing chip count. It used SRAM with a 10 n
 The second implementation was built using modern high-speed 74-series logic and SRAM with an 8 ns access time. In this implementation, the clock reached 125 MHz. Processor operation was verified in hardware; in particular, an oscilloscope was used to show cyclic execution of a six-instruction sequence. Programming tools were also developed for this implementation.
 
 *[Photo of the second prototype / oscilloscope traces]*
-pcb_125Mhz.jpg
-
+[pcb_125Mhz.jpg](https://github.com/digicat6/LUTCPU/blob/7ab379fa0e09f90a177814882bbc9f6363533f84/pcb_125Mhz.jpg)
+[oscilloscope.jpg](https://github.com/digicat6/LUTCPU/blob/7ab379fa0e09f90a177814882bbc9f6363533f84/oscilloscope.jpg)
 
 **Prototype II — high-speed implementation.** Modern 74-series logic, 8 ns SRAM, operation up to 125 MHz. Oscilloscope demonstration of a six-instruction execution loop.
 
