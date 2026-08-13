@@ -33,7 +33,7 @@ Before this project, I built two hardware implementations of the Monofunction Co
 The first was aimed primarily at minimizing chip count. It used SRAM with a 10 ns access time and comprised roughly 12 chips from the 74-series. The project achieved a basic operation execution time of about 40 ns and produced a 16-color text-mode VGA signal. A custom editor/assembler was also built to work with the architecture.
 
 *[Photo of the first prototype]*
-monitor.jpg
+[monitor.jpg](https://github.com/digicat6/LUTCPU/blob/e464eea403b24b8ca4787ef546efdb35a5d1d5f4/monitor.jpg)
 
 **Prototype I — minimum-chip implementation.** Approximately 12 logic ICs, 10 ns SRAM, 40 ns basic operation, 16-color text VGA output.
 
