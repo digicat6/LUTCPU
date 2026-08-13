@@ -34,7 +34,7 @@ The first was aimed primarily at minimizing chip count. It used SRAM with a 10 n
 
 *[Photo of the first prototype]*
 [monitor.jpg](https://github.com/digicat6/LUTCPU/blob/e464eea403b24b8ca4787ef546efdb35a5d1d5f4/monitor.jpg)
-https://github.com/digicat6/LUTCPU/blob/1d46f3d1569c48a4c28b6887e600080105c6550b/assembler.jpg
+[assembler.jpg](https://github.com/digicat6/LUTCPU/blob/b826045c655c15fa5ad0eda4f5d10471686a48de/assembler.jpg)
 
 **Prototype I — minimum-chip implementation.** Approximately 12 logic ICs, 10 ns SRAM, 40 ns basic operation, 16-color text VGA output.
 
