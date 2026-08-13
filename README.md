@@ -1,3 +1,4 @@
+
 # Monofunction Computing Architecture
 
 I am researching a computational model from which the Monofunction Computing Architecture was derived.
