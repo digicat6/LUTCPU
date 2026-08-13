@@ -1,4 +1,4 @@
-Monofunction Computing Architecture
+# Monofunction Computing Architecture
 
 I am researching a computational model from which the Monofunction Computing Architecture was derived.
 
@@ -8,13 +8,14 @@ The result is a monofunctional computing architecture in which a wide range of t
 
 The model is described by a mathematical formula, and the architecture built on it differs substantially from the classical organization of a processor.
 
-Publication
+**Publication**
 
-A Canonical Routine Form for Compositional Computation
+*A Canonical Routine Form for Compositional Computation*
 
-DOI: Publication on Zenodo Google Scholar profile
+DOI: [Publication on Zenodo](https://doi.org/10.5281/zenodo.18647826)
+[Google Scholar profile](https://scholar.google.com/citations?user=k1BGbgYAAAAJ)
 
-Why build a computer
+## Why build a computer
 
 My goal is to get a practical sense of how efficient this computational model actually is.
 
@@ -24,21 +25,21 @@ The point of the project is not to find out whether the architecture works at al
 
 The current project pursues a different goal: to build a reasonably complete computer under strictly defined historical technological constraints, and see how efficient the computational model itself turns out to be.
 
-Previous implementations
+## Previous implementations
 
 Before this project, I built two hardware implementations of the Monofunction Computing Architecture using 74-series logic.
 
 The first was aimed primarily at minimizing chip count. It used SRAM with a 10 ns access time and comprised roughly 12 chips from the 74-series. The project achieved a basic operation execution time of about 40 ns and produced a 16-color text-mode VGA signal. A custom editor/assembler was also built to work with the architecture.
 
-[Photo of the first prototype]
+*[Photo of the first prototype]*
 
-Prototype I — minimum-chip implementation. Approximately 12 logic ICs, 10 ns SRAM, 40 ns basic operation, 16-color text VGA output.
+**Prototype I — minimum-chip implementation.** Approximately 12 logic ICs, 10 ns SRAM, 40 ns basic operation, 16-color text VGA output.
 
 The second implementation was built using modern high-speed 74-series logic and SRAM with an 8 ns access time. In this implementation, the clock reached 125 MHz. Processor operation was verified in hardware; in particular, an oscilloscope was used to show cyclic execution of a six-instruction sequence. Programming tools were also developed for this implementation.
 
-[Photo of the second prototype / oscilloscope traces]
+*[Photo of the second prototype / oscilloscope traces]*
 
-Prototype II — high-speed implementation. Modern 74-series logic, 8 ns SRAM, operation up to 125 MHz. Oscilloscope demonstration of a six-instruction execution loop.
+**Prototype II — high-speed implementation.** Modern 74-series logic, 8 ns SRAM, operation up to 125 MHz. Oscilloscope demonstration of a six-instruction execution loop.
 
 Both implementations remained experimental prototypes. I never took their software to the level of a complete computer.
 
@@ -50,7 +51,7 @@ This time, I want to deliberately give up the advantage of modern memory and bui
 
 If the architecture really is efficient, let that advantage come from the architecture itself — not from 8 ns or 10 ns SRAM.
 
-Why a retro-computer?
+## Why a retro-computer?
 
 The choice of period-accurate components is not simply driven by an interest in retro-computing.
 
@@ -72,7 +73,7 @@ I am building a retro-computer because the technology level of the early 1980s i
 
 And the historical, nostalgic character of such an experiment only makes the work more enjoyable.
 
-The 1983 rule
+## The 1983 rule
 
 The computationally significant part of the project uses only components that actually existed and were commercially available by the chosen date.
 
@@ -86,38 +87,39 @@ If the architecture turns out to have an advantage, I want that advantage to com
 
 So for every critical component, I try to verify not just the chip's introduction date, but its actual commercial availability — via historical catalogs, price lists, and manufacturer documentation.
 
-Current project — a 1983 computer
+## Current project — a 1983 computer
 
 The computer being designed has the following baseline configuration:
 
-4 KB instruction memory;
-4 KB operand and data memory;
-64 KB DRAM video memory;
-8-bit architecture;
-512×200 color raster display;
-16 colors;
-a processor built from 74-series discrete logic.
+- 4 KB instruction memory;
+- 4 KB operand and data memory;
+- 64 KB DRAM video memory;
+- 8-bit architecture;
+- 512×200 color raster display;
+- 16 colors;
+- a processor built from 74-series discrete logic.
 
 Modern FPGAs and microcontrollers are not used to implement the computing architecture.
 
 The computer is meant not to be an imitation of an early-1980s machine, but a machine that could, in principle, have been built from the components that actually existed then.
 
-Memory
+## Memory
 
 Choosing the memory is especially important, since its speed directly limits what the computing system can do.
 
 The reference components are ones whose availability and pricing are confirmed by historical price lists from the early 1980s:
 
-Chip	Organization	Speed	Price
-DRAM 4116	16K×1 bit	200 ns	$1.50
-DRAM 4164	64K×1 bit	200 ns	$7.95
-SRAM HM6116	2048×8 bit	150 ns	$8.25
+| Chip | Organization | Speed | Price |
+|---|---|---|---|
+| DRAM 4116 | 16K×1 bit | 200 ns | $1.50 |
+| DRAM 4164 | 64K×1 bit | 200 ns | $7.95 |
+| SRAM HM6116 | 2048×8 bit | 150 ns | $8.25 |
 
 The prices aren't there to squeeze out the cheapest possible machine at any cost.
 
 They let me judge how realistic a given technical choice would have been for its time, and later let me compare the cost of the experimental machine against the cost of other computers of the period.
 
-What I want to get out of this
+## What I want to get out of this
 
 Once the computer is finished, I want to run a series of comparisons against real personal computers from the same period.
 
@@ -125,16 +127,16 @@ I'm not interested in one hand-picked competitor or a single metric.
 
 As far as possible, the comparison will cover:
 
-execution time of individual operations;
-execution time of identical program tasks;
-memory bandwidth;
-graphics capabilities;
-resolution and number of simultaneously displayed colors;
-amount of memory;
-hardware complexity;
-chip count;
-cost of the component base at historical prices;
-how efficiently the available hardware resources are used.
+- execution time of individual operations;
+- execution time of identical program tasks;
+- memory bandwidth;
+- graphics capabilities;
+- resolution and number of simultaneously displayed colors;
+- amount of memory;
+- hardware complexity;
+- chip count;
+- cost of the component base at historical prices;
+- how efficiently the available hardware resources are used.
 
 It's especially important to distinguish between the execution time of one architectural operation and the time needed to solve a complete task.
 
@@ -144,7 +146,7 @@ For a more meaningful comparison, I'll use identical end tasks: block-memory ope
 
 That way it becomes possible to compare not just individual hardware cycles, but the actual amount of work a computer completes in a given time.
 
-What this experiment is meant to show
+## What this experiment is meant to show
 
 A comparison like this is not an exhaustive mathematical proof of the computational model's efficiency.
 
@@ -160,13 +162,13 @@ If some feature of the architecture turns out to be inefficient once it's actual
 
 Ultimately, the question behind the project is a simple one:
 
-What could this computing model have delivered if a computer based on it had actually been built in 1983?
+> What could this computing model have delivered if a computer based on it had actually been built in 1983?
 
 I like this method of testing precisely because of its simplicity.
 
 Instead of yet another simulation, you get an actual computer built from chips of its own era. You can assemble it, power it on, plug it into a monitor, write programs for it, measure its real timing — and put the results next to the specs of computers that genuinely existed at the time.
 
-Why the project is public before it's finished
+## Why the project is public before it's finished
 
 The project is still in development.
 
@@ -176,17 +178,17 @@ So I decided not to wait until the computer is fully finished, and instead publi
 
 This repository will host:
 
-description of the computational model;
-the mathematical formula;
-architecture description;
-schematics;
-timing diagrams;
-PCB files;
-bills of materials;
-historical sources for the component base;
-software;
-test and measurement results;
-final comparisons with computers from the same era.
+- description of the computational model;
+- the mathematical formula;
+- architecture description;
+- schematics;
+- timing diagrams;
+- PCB files;
+- bills of materials;
+- historical sources for the component base;
+- software;
+- test and measurement results;
+- final comparisons with computers from the same era.
 
 I'd welcome contributions from anyone interested in digital logic, retro-computing, DRAM, circuit design, PCB layout, video signals, or low-level programming.
 
