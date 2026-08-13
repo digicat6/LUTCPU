@@ -33,16 +33,16 @@ Before this project, I built two hardware implementations of the Monofunction Co
 The first was aimed primarily at minimizing chip count. It used SRAM with a 10 ns access time and comprised roughly 12 chips from the 74-series. The project achieved a basic operation execution time of about 40 ns and produced a 16-color text-mode VGA signal. A custom editor/assembler was also built to work with the architecture.
 
 *[Photo of the first prototype]*
-[monitor.jpg](https://github.com/digicat6/LUTCPU/blob/e464eea403b24b8ca4787ef546efdb35a5d1d5f4/monitor.jpg)
-[assembler.jpg](https://github.com/digicat6/LUTCPU/blob/b826045c655c15fa5ad0eda4f5d10471686a48de/assembler.jpg)
+![monitor.jpg](https://github.com/digicat6/LUTCPU/blob/e464eea403b24b8ca4787ef546efdb35a5d1d5f4/monitor.jpg)
+![assembler.jpg](https://github.com/digicat6/LUTCPU/blob/b826045c655c15fa5ad0eda4f5d10471686a48de/assembler.jpg)
 
 **Prototype I — minimum-chip implementation.** Approximately 12 logic ICs, 10 ns SRAM, 40 ns basic operation, 16-color text VGA output.
 
 The second implementation was built using modern high-speed 74-series logic and SRAM with an 8 ns access time. In this implementation, the clock reached 125 MHz. Processor operation was verified in hardware; in particular, an oscilloscope was used to show cyclic execution of a six-instruction sequence. Programming tools were also developed for this implementation.
 
 *[Photo of the second prototype / oscilloscope traces]*
-[pcb_125Mhz.jpg](https://github.com/digicat6/LUTCPU/blob/7ab379fa0e09f90a177814882bbc9f6363533f84/pcb_125Mhz.jpg)
-[oscilloscope.jpg](https://github.com/digicat6/LUTCPU/blob/7ab379fa0e09f90a177814882bbc9f6363533f84/oscilloscope.jpg)
+![pcb_125Mhz.jpg](https://github.com/digicat6/LUTCPU/blob/7ab379fa0e09f90a177814882bbc9f6363533f84/pcb_125Mhz.jpg)
+![oscilloscope.jpg](https://github.com/digicat6/LUTCPU/blob/7ab379fa0e09f90a177814882bbc9f6363533f84/oscilloscope.jpg)
 
 **Prototype II — high-speed implementation.** Modern 74-series logic, 8 ns SRAM, operation up to 125 MHz. Oscilloscope demonstration of a six-instruction execution loop.
 
